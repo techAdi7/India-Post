@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Product Form</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <!-- Main content of your page -->
+     <!-- Nav-Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">India Post</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donation_form.html">Donation Form</a></li>
+            <li><a href="delivery_tracking.html">Delivery Tracking</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <!-- Add other nav links here -->
+        </ul>
+    </nav>
+    <!-- Custom Product Section -->
+    <section class="custom-product-section">
+        <h2>Customization Details</h2>
+        <form id="custom-product-form">
+            <div class="form-group">
+                <label for="product-name">Name of the product:</label>
+                <input type="text" id="product-name" name="product-name" placeholder="Enter product name" required>
+            </div>
+            <div class="form-group">
+                <label for="customization-details">Customization needed:</label>
+                <textarea id="customization-details" name="customization-details" placeholder="Describe the customization" maxlength="1000" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="delivery-address">Address to deliver the product:</label>
+                <input type="text" id="delivery-address" name="delivery-address" placeholder="Enter delivery address" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-time">Time of delivery:</label>
+                <input type="datetime-local" id="delivery-time" name="delivery-time" required>
+            </div>
+            <div class="form-group">
+                <label>Would you like to buy for yourself or gift others?</label>
+                <div>
+                    <input type="radio" id="buy-yourself" name="purchase-type" value="yourself" checked>
+                    <label for="buy-yourself">For Myself</label>
+                </div>
+                <div>
+                    <input type="radio" id="gift-others" name="purchase-type" value="gift">
+                    <label for="gift-others">Gift Others</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="quick-links">
+                    <a href="about.html">About Us</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                <div class="contact-info">
+                    <p>Contact Us: <a href="mailto:support@indiapost.com">support@indiapost.com</a></p>
+                </div>
+            </div>
+        </footer>
+    <!-- End of main content -->
+
+    <!-- Link to JavaScript file -->
+    <script src="custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 2px;
+    padding: 10px;
+    color: #2C3E50;
+    background-color: #F7F3E9;
+    line-height: 1.6;
+}
+
+/* Nav-Bar */
+nav {
+    background-color: #B03A2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 8px;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #F7F3E9;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F7F3E9;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Dropdown */
+.nav-links .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-links .dropdown-toggle {
+    text-decoration: none;
+    color: #F7F3E9;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-links .dropdown-toggle:hover {
+    color: #B03A2E;
+    background-color: #F7F3E9;
+    border-radius: 4px;
+}
+
+.nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F7F3E9;
+    padding: 10px;
+    border-radius: 8px;
+    list-style: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-links .dropdown-menu li {
+    margin: 5px 0;
+}
+
+.nav-links .dropdown-menu li a {
+    text-decoration: none;
+    color: #B03A2E;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links .dropdown-menu li a:hover {
+    background-color: #E5B65E;
+    color: #2C3E50;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delivery Tracking Section */
+
+.tracking-section{
+    padding: 10%;
+    text-align: center;
+}
+.tracking-section h2{
+    font-size: 40px;
+}
+.delivery-tracking-section {
+    padding: 60px 20px;
+    background-color: #FDF6E3;
+    text-align: center;
+    color: #87a6c4;
+}
+
+.delivery-tracking-section h2 {
+    margin-bottom: 30px;
+    color: #B03A2E;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.delivery-tracking-section form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F7F3E9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.delivery-tracking-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.delivery-tracking-section input[type="text"], 
+.delivery-tracking-section input[type="number"],
+.delivery-tracking-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #B03A2E;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.delivery-tracking-section textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.delivery-tracking-section button {
+    padding: 10px 20px;
+    background-color: #B03A2E;
+    color: #F7F3E9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.delivery-tracking-section button:hover {
+    background-color: #8B2A1C;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #F7F3E9;
+    padding: 40px 20px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .quick-links a {
+    text-decoration: none;
+    color: #F7F3E9;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #B03A2E;
+    color: #F7F3E9;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .social-media a {
+    margin-right: 10px;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}

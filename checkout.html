@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script defer src="checkout.js"></script> <!-- JavaScript file for handling checkout -->
+</head>
+<body>
+
+    <h1>Checkout</h1>
+    <div id="checkout-container">
+        <h2>Order Summary</h2>
+        <ul id="order-items-list">
+            <!-- Order items will be dynamically inserted here -->
+        </ul>
+        <p>Total: ₹<span id="order-total-amount">0</span></p>
+
+        <h2>Shipping Information</h2>
+        <form id="checkout-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="net-banking">Net Banking</option>
+                <option value="cash-on-delivery">Cash on Delivery</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+</body>
+</html>

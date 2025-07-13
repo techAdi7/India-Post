@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="product_details.css">
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-container">
+        <ul id="cart-items-list">
+            <!-- Example item -->
+            <li>
+                <div class="cart-item-image">
+                    <img src="sari.jpg" alt="Banarasi Silk Saree">
+                </div>
+                <div class="cart-item-details">
+                    <h3>Banarasi Silk Saree</h3>
+                    <p>Price: ₹6,500</p>
+                    <p>Rating: ★★★★☆</p>
+                </div>
+                <div class="cart-item-actions">
+                    <input type="number" value="1" min="1">
+                    <button>Update</button>
+                    <button>Remove</button>
+                </div>
+                <div class="cart-item-total">
+                    <p>Total: ₹6,500</p>
+                </div>
+            </li>
+            <!-- Repeat similar structure for more items -->
+        </ul>
+
+        <p id="cart-total-amount">Total Amount: ₹6,500</p>
+        <button onclick="location.href='checkout.html'">Proceed to Checkout</button>
+    </div>
+</body>
+</html>
